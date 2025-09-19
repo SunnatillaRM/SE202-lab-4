@@ -62,8 +62,8 @@ void main() {
   // Task 4
   print("\nTask 4:");
 
-  var user1 = User("Alice", UserRole.admin);
-  var user2 = User("Bob", UserRole.guest);
+  var user1 = User("Sam", UserRole.admin);
+  var user2 = User("Smas", UserRole.guest);
 
   print("${user1.name} has edit permission? ${user1.hasEditPermission()}");
   print("${user2.name} has edit permission? ${user2.hasEditPermission()}");
