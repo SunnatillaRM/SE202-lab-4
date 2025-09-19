@@ -61,12 +61,12 @@ void main() {
 
   // Task 4
   print("\nTask 4:");
-
+  
   var user1 = User("Sam", UserRole.admin);
   var user2 = User("Smas", UserRole.guest);
 
-  print("${user1.name} has edit permission? ${user1.hasEditPermission()}");
-  print("${user2.name} has edit permission? ${user2.hasEditPermission()}");
+  print("${user1.name} ${user1.hasEditPermission() ? "has" : "doesn't have"} edit permission");
+  print("${user2.name} ${user2.hasEditPermission() ? "has" : "doesn't have"} edit permission");
 
   // Task 5
   print("\nTask 5:");
