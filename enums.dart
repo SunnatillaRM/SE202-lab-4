@@ -50,13 +50,13 @@ void main() {
   print("\nTask 2:");
 
   var status = OrderStatus.processing;
-  print("Order status: $status");
+  print("Order status: ${status.name}");
 
   // Task 3
   print("\nTask 3:");
 
   for (var light in TrafficLight.values) {
-    print("Traffic light $light → ${getTrafficAction(light)}");
+    print("Traffic light ${light.name} → ${getTrafficAction(light)}");
   }
 
   // Task 4
@@ -70,8 +70,8 @@ void main() {
 
   // Task 5
   print("\nTask 5:");
-
+  
   for (var light in TrafficLight.values) {
-    print("Light: $light → Duration: ${light.durationInSeconds} seconds");
+    print("Light: ${light.name} → Duration: ${light.durationInSeconds} seconds");
   }
 }
